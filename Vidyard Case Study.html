@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Onboarding Chronicles</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;700&display=swap');
+        :root { --comic-yellow: #FFDE4D; --comic-red: #FF4E4E; --comic-blue: #3FA2F6; --dark-blue: #0F1035; --panel-bg: #FFFFFF; }
+        body { font-family: 'Oswald', sans-serif; background-color: var(--dark-blue); color: #fff; margin: 0; padding: 0; box-sizing: border-box; }
+        
+        header { background-color: var(--comic-yellow); color: var(--dark-blue); text-align: center; padding: 2rem 1rem; border-bottom: 5px solid #000; }
+        header h1 { font-family: 'Bangers', cursive; font-size: 3.5rem; margin: 0; letter-spacing: 2px; text-shadow: 2px 2px 0px var(--comic-red); }
+        header p { font-size: 1.2rem; font-weight: bold; margin: 0.5rem 0 0 0; text-transform: uppercase; }
+
+        .container { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; }
+
+        .comic-panel { background-color: var(--panel-bg); color: var(--dark-blue); border: 5px solid #000; box-shadow: 10px 10px 0px #000; margin-bottom: 3rem; border-radius: 4px; overflow: hidden; }
+        .panel-header { background-color: var(--comic-red); color: white; font-family: 'Bangers', cursive; font-size: 1.8rem; padding: 0.6rem 1.5rem; border-bottom: 5px solid #000; letter-spacing: 1px; }
+        .panel-body { display: grid; grid-template-columns: 1.2fr 1fr; background-color: #000; gap: 5px; }
+        @media (max-width: 900px) { .panel-body { grid-template-columns: 1fr; } }
+        
+        .panel-content { background-color: var(--panel-bg); padding: 2.5rem 2rem; display: flex; flex-direction: column; justify-content: center; }
+        .panel-content ul { margin: 0; padding-left: 1.5rem; font-size: 1.2rem; line-height: 1.7; }
+        .panel-image-box { background-color: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 350px; }
+        
+        .panel-image-box img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain; 
+            background-color: #000; 
+            display: block; 
+        }
+
+        .interlude-panel { background-color: var(--comic-blue); border: 4px dashed #fff; padding: 1.5rem; margin: 2rem 0; text-align: center; border-radius: 8px; }
+        .interlude-panel h3 { font-family: 'Bangers', cursive; font-size: 1.8rem; margin: 0; color: #fff; }
+        .interlude-panel p { font-size: 1.2rem; margin: 0.5rem 0 0 0; font-style: italic; }
+
+        .retrospective-panel { background-color: var(--dark-blue); border: 5px solid var(--comic-yellow); box-shadow: 10px 10px 0px #000; border-radius: 4px; padding: 2rem; margin-top: 5rem; }
+        .retrospective-panel h2 { font-family: 'Bangers', cursive; font-size: 2.5rem; color: var(--comic-yellow); margin-top: 0; letter-spacing: 1px; }
+        .retro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+        .retro-block h3 { font-size: 1.4rem; color: var(--comic-red); text-transform: uppercase; margin-top: 0; }
+        .retro-block p { font-size: 1.15rem; line-height: 1.6; margin: 0; }
+        footer { text-align: center; padding: 4rem 2rem; font-size: 1rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Onboarding Chronicles</h1>
+        <p>A Cross-Functional Operational Case Study</p>
+    </header>
+
+    <div class="container">
+
+        <div class="comic-panel">
+            <div class="panel-header">PHASE 1: DIAGNOSING THE SPAGHETTI MAP</div>
+            <div class="panel-body">
+                <div class="panel-content">
+                    <ul>
+                        <li><strong>The Mandate:</strong> Appointed to a 3-person team for root-cause diagnosis of onboarding friction.</li>
+                        <li><strong>The Findings:</strong> Identified four systemic bottlenecks: <strong>1)</strong> Zero central documentation, <strong>2)</strong> Ownership "black boxes," <strong>3)</strong> Tool fragmentation, and <strong>4)</strong> IT procurement delays.</li>
+                        <li><strong>The Handover:</strong> Presented the final blueprint to leadership, who placed the project on hold for strategic review.</li>
+                    </ul>
+                </div>
+                <div class="panel-image-box"><img src="image_1.jpg" alt="Phase 1 Visual"></div>
+            </div>
+        </div>
+
+        <div class="interlude-panel">
+            <h3>⚠️ THE ACQUISITION REVEAL</h3>
+            <p>Following a silent project pause, a large-scale acquisition was announced. My diagnostic findings became the foundational logic for the ensuing post-acquisition integration.</p>
+        </div>
+
+        <div class="comic-panel">
+            <div class="panel-header">PHASE 2: HIBOB ARCHITECTURE & INNOVATION</div>
+            <div class="panel-body">
+                <div class="panel-content">
+                    <ul>
+                        <li><strong>The Execution:</strong> Led the 'from-scratch' design of our HiBob instance, recycling historical diagnostic data to build a resilient, future-proofed workflow.</li>
+                        <li><strong>The Integration:</strong> Architected a seamless <strong>Greenhouse ➔ HiBob ➔ ServiceNow</strong> pipeline, successfully cutting total onboarding steps in half.</li>
+                        <li><strong>IT Synergy:</strong> Partnered with IT to custom-design a <strong>Business Email Testing Tool</strong>, allowing TA to verify email logic at the point of hire—permanently resolving our IT procurement bottleneck.</li>
+                    </ul>
+                </div>
+                <div class="panel-image-box"><img src="image_2.jpg" alt="Phase 2 Visual"></div>
+            </div>
+        </div>
+
+        <div class="comic-panel">
+            <div class="panel-header">PHASE 3: THE SIMULTANEOUS ENGINE</div>
+            <div class="panel-body">
+                <div class="panel-content">
+                    <ul>
+                        <li><strong>Automated Ecosystem:</strong> The email tool triggered account provisioning weeks in advance, enabling 100% Day-1 readiness.</li>
+                        <li><strong>Strategic Result:</strong> Moved the organization from a reactive "wait-and-see" model to a high-velocity, simultaneous onboarding engine.</li>
+                        <li><strong>Impact:</strong> Achieved a 50% reduction in cycle time with zero manual data duplication.</li>
+                    </ul>
+                </div>
+                <div class="panel-image-box"><img src="image_3.jpg" alt="Phase 3 Visual"></div>
+            </div>
+        </div>
+
+        <div class="retrospective-panel">
+            <h2>🎯 THE OPERATIONAL RETROSPECTIVE</h2>
+            <div class="retro-grid">
+                <div class="retro-block">
+                    <h3>What Worked Well</h3>
+                    <p>Recycling diagnostic data into architectural requirements ensured the new build addressed the *actual* problems, not just symptoms.</p>
+                </div>
+                <div class="retro-block">
+                    <h3>Lessons Learned</h3>
+                    <p>Early-stage IT collaboration is the ultimate force multiplier for eliminating downstream provisioning delays.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
